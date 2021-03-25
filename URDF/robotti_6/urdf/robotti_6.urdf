@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robotti_6">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.11531 0.13363 0.04571"
+        rpy="0 0 0" />
+      <mass
+        value="7.5654" />
+      <inertia
+        ixx="0.032867"
+        ixy="-0.00013056"
+        ixz="-2.7059E-05"
+        iyy="0.025684"
+        iyz="-1.0132E-05"
+        izz="0.055266" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotti_6/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotti_6/meshes/base_hitbox.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="weapon_link">
+    <inertial>
+      <origin
+        xyz="-1.2221E-05 -0.10799 -9.7854E-06"
+        rpy="0 0 0" />
+      <mass
+        value="2.3955" />
+      <inertia
+        ixx="0.011368"
+        ixy="-1.0456E-07"
+        ixz="3.2572E-05"
+        iyy="0.00042576"
+        iyz="-8.398E-08"
+        izz="0.011353" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotti_6/meshes/weapon_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotti_6/meshes/weapon_hitbox.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="weapon_joint"
+    type="continuous">
+    <origin
+      xyz="0.0500000000000034 0.235000000000002 0.0449999999999988"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="weapon_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="l_wheel_link">
+    <inertial>
+      <origin
+        xyz="1.7031E-08 0.021831 1.0089E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.22123" />
+      <inertia
+        ixx="0.00019462"
+        ixy="1.9923E-10"
+        ixz="-5.7804E-12"
+        iyy="0.00033659"
+        iyz="9.6914E-14"
+        izz="0.00019462" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotti_6/meshes/l_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotti_6/meshes/l_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.105000000000001 0.262999999999998 0.0449999999999991"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="l_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="r_wheel_link">
+    <inertial>
+      <origin
+        xyz="-1.8435E-08 -0.021831 -6.022E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.22123" />
+      <inertia
+        ixx="0.00019462"
+        ixy="1.5398E-10"
+        ixz="-2.8577E-12"
+        iyy="0.00033659"
+        iyz="1.2831E-10"
+        izz="0.00019462" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotti_6/meshes/r_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotti_6/meshes/r_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.104999999999999 -0.00300000000000172 0.045"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="r_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>

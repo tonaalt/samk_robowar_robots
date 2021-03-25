@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robotti_5">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0063844 -0.00089536 0.050922"
+        rpy="0 0 0" />
+      <mass
+        value="10.125" />
+      <inertia
+        ixx="0.11247"
+        ixy="1.1247E-06"
+        ixz="0.0046086"
+        iyy="0.05265"
+        iyz="1.5894E-05"
+        izz="0.15325" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotti_5/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotti_5/meshes/base_hitbox.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="BL_wheel_link">
+    <inertial>
+      <origin
+        xyz="0 -5.3954E-05 -6.9389E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.1551" />
+      <inertia
+        ixx="0.00011488"
+        ixy="-4.8959E-21"
+        ixz="-4.2911E-21"
+        iyy="0.00021802"
+        iyz="3.9559E-24"
+        izz="0.00011488" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotti_5/meshes/BL_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotti_5/meshes/BL_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BL_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.125 0.195 0.05"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="BL_wheel_link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="BR_wheel_link">
+    <inertial>
+      <origin
+        xyz="0 5.3954E-05 -6.9389E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.1551" />
+      <inertia
+        ixx="0.00011488"
+        ixy="9.4757E-22"
+        ixz="4.5402E-20"
+        iyy="0.00021802"
+        iyz="5.7604E-21"
+        izz="0.00011488" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotti_5/meshes/BR_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotti_5/meshes/BR_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="BR_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.125 -0.195 0.05"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="BR_wheel_link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="FR_wheel_link">
+    <inertial>
+      <origin
+        xyz="0 5.3954E-05 -6.9389E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.1551" />
+      <inertia
+        ixx="0.00011488"
+        ixy="-7.6052E-21"
+        ixz="-9.4109E-21"
+        iyy="0.00021802"
+        iyz="4.9245E-21"
+        izz="0.00011488" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotti_5/meshes/FR_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotti_5/meshes/FR_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FR_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.01984 -0.195 0.05"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="FR_wheel_link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="FL_wheel_link">
+    <inertial>
+      <origin
+        xyz="0 -5.3954E-05 -2.0817E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.1551" />
+      <inertia
+        ixx="0.00011488"
+        ixy="-1.3075E-20"
+        ixz="1.364E-20"
+        iyy="0.00021802"
+        iyz="1.2418E-20"
+        izz="0.00011488" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotti_5/meshes/FL_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotti_5/meshes/FL_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FL_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.01984 0.195 0.05"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="FL_wheel_link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+</robot>
