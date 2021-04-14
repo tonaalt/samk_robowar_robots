@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="r3_2020">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.081493 7.5493E-05 0.11049"
+        rpy="0 0 0" />
+      <mass
+        value="12.193" />
+      <inertia
+        ixx="0.13348"
+        ixy="-4.7884E-05"
+        ixz="-0.0051656"
+        iyy="0.13115"
+        iyz="4.4011E-07"
+        izz="0.2352" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://r3_2020/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://r3_2020/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel_left_link">
+    <inertial>
+      <origin
+        xyz="0.0014732 0.16692 0.051477"
+        rpy="0 0 0" />
+      <mass
+        value="0.1194" />
+      <inertia
+        ixx="9.3714E-05"
+        ixy="1.6276E-22"
+        ixz="2.8309E-20"
+        iyy="0.0001803"
+        iyz="9.0387E-19"
+        izz="9.3714E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://r3_2020/meshes/wheel_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://r3_2020/meshes/wheel_left_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_left_link"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_left_link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="wheel_right_link">
+    <inertial>
+      <origin
+        xyz="-0.0014732 -0.16692 0.051477"
+        rpy="0 0 0" />
+      <mass
+        value="0.1194" />
+      <inertia
+        ixx="9.3714E-05"
+        ixy="-4.7723E-22"
+        ixz="-2.4569E-20"
+        iyy="0.0001803"
+        iyz="3.0153E-19"
+        izz="9.3714E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://r3_2020/meshes/wheel_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://r3_2020/meshes/wheel_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_right_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_right_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="blade_right_link">
+    <inertial>
+      <origin
+        xyz="0.3015 -0.1503 0.13348"
+        rpy="0 0 0" />
+      <mass
+        value="0.012885" />
+      <inertia
+        ixx="1.4009E-05"
+        ixy="-1.5168E-20"
+        ixz="-1.9721E-22"
+        iyy="2.8016E-05"
+        iyz="9.4703E-20"
+        izz="1.4009E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://r3_2020/meshes/blade_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://r3_2020/meshes/blade_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="blade_right_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="blade_right_link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="blade_left_link">
+    <inertial>
+      <origin
+        xyz="0.3015 0.1503 0.13348"
+        rpy="0 0 0" />
+      <mass
+        value="0.012885" />
+      <inertia
+        ixx="1.4009E-05"
+        ixy="1.3204E-20"
+        ixz="5.0201E-22"
+        iyy="2.8016E-05"
+        iyz="8.3033E-26"
+        izz="1.4009E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://r3_2020/meshes/blade_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://r3_2020/meshes/blade_left_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="blade_left_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="blade_left_link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+</robot>

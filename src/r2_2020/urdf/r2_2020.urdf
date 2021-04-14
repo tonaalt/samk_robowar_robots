@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="r2_2020">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.02452 0.0001797 0.11849"
+        rpy="0 0 0" />
+      <mass
+        value="9.9402" />
+      <inertia
+        ixx="0.13789"
+        ixy="0.00010399"
+        ixz="0.0002339"
+        iyy="0.13898"
+        iyz="-3.5534E-05"
+        izz="0.22196" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://r2_2020/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://r2_2020/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="weapon_link">
+    <inertial>
+      <origin
+        xyz="0.21774 0.00068787 0.179"
+        rpy="0 0 0" />
+      <mass
+        value="1.4464" />
+      <inertia
+        ixx="0.02088"
+        ixy="2.4746E-09"
+        ixz="6.8547E-10"
+        iyy="0.015793"
+        iyz="0.0085734"
+        izz="0.0056937" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://r2_2020/meshes/weapon_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.52941 0.54902 0.54902 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://r2_2020/meshes/weapon_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="weapon_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="weapon_link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="left_wheel_link">
+    <inertial>
+      <origin
+        xyz="-0.11755 0.18134 0.0655"
+        rpy="0 0 0" />
+      <mass
+        value="0.25123" />
+      <inertia
+        ixx="0.00026911"
+        ixy="3.2973E-20"
+        ixz="3.3667E-20"
+        iyy="0.00052643"
+        iyz="2.8273E-19"
+        izz="0.00026911" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://r2_2020/meshes/left_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://r2_2020/meshes/left_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel_link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="right_wheel_link">
+    <inertial>
+      <origin
+        xyz="-0.11755 -0.18134 0.0655"
+        rpy="0 0 0" />
+      <mass
+        value="0.25123" />
+      <inertia
+        ixx="0.00026911"
+        ixy="-5.0027E-19"
+        ixz="3.863E-20"
+        iyy="0.00052643"
+        iyz="-9.5453E-19"
+        izz="0.00026911" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://r2_2020/meshes/right_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://r2_2020/meshes/right_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_wheel_link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+</robot>
