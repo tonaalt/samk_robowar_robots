@@ -48,7 +48,7 @@
     name="wheel_left_link">
     <inertial>
       <origin
-        xyz="-0.075 0.14296 0.057215"
+        xyz="0 -3.7279E-05 0"
         rpy="0 0 0" />
       <mass
         value="0.10382" />
@@ -88,7 +88,7 @@
     name="wheel_left_joint"
     type="continuous">
     <origin
-      xyz="0 0 0"
+      xyz="-0.075 0.143 0.057215"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -101,7 +101,7 @@
     name="wheel_right_link">
     <inertial>
       <origin
-        xyz="-0.075 -0.14296 0.057215"
+        xyz="0 3.7279E-05 0"
         rpy="0 0 0" />
       <mass
         value="0.10382" />
@@ -141,7 +141,7 @@
     name="wheel_right_joint"
     type="continuous">
     <origin
-      xyz="0 0 0"
+      xyz="-0.075 -0.143 0.057215"
       rpy="0 0 0" />
     <parent
       link="base_link" />

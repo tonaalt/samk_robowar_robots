@@ -8,7 +8,7 @@
     name="base_link">
     <inertial>
       <origin
-        xyz="-0.056038 -0.0025002 0.093382"
+        xyz="-0.056038 -0.0025002 0.099382"
         rpy="0 0 0" />
       <mass
         value="9.3479" />
@@ -48,16 +48,16 @@
     name="wheel_left_link">
     <inertial>
       <origin
-        xyz="-0.048 0.163 0.0925"
+        xyz="9.7145E-17 -2.7756E-17 5.5511E-17"
         rpy="0 0 0" />
       <mass
         value="0.53215" />
       <inertia
         ixx="0.001203"
-        ixy="8.1593E-18"
-        ixz="1.8497E-18"
+        ixy="8.1566E-18"
+        ixz="1.8793E-18"
         iyy="0.002391"
-        iyz="3.9816E-18"
+        iyz="3.9825E-18"
         izz="0.001203" />
     </inertial>
     <visual>
@@ -88,7 +88,7 @@
     name="wheel_left_joint"
     type="continuous">
     <origin
-      xyz="0 0 0"
+      xyz="-0.048 0.163 0.0985"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -101,16 +101,16 @@
     name="wheel_right_link">
     <inertial>
       <origin
-        xyz="-0.048 -0.163 0.0925"
+        xyz="9.7145E-17 2.7756E-17 9.7145E-17"
         rpy="0 0 0" />
       <mass
         value="0.53215" />
       <inertia
         ixx="0.001203"
-        ixy="8.4155E-18"
-        ixz="1.4196E-18"
+        ixy="8.4176E-18"
+        ixz="1.4317E-18"
         iyy="0.002391"
-        iyz="3.8145E-18"
+        iyz="3.8132E-18"
         izz="0.001203" />
     </inertial>
     <visual>
@@ -141,7 +141,7 @@
     name="wheel_right_joint"
     type="continuous">
     <origin
-      xyz="0 0 0"
+      xyz="-0.048 -0.163 0.0985"
       rpy="0 0 0" />
     <parent
       link="base_link" />

@@ -48,16 +48,16 @@
     name="wheel_left_link">
     <inertial>
       <origin
-        xyz="0.0014732 0.16692 0.051477"
+        xyz="-4.3368E-19 -0.006843 -4.8572E-17"
         rpy="0 0 0" />
       <mass
         value="0.1194" />
       <inertia
         ixx="9.3714E-05"
-        ixy="1.6276E-22"
-        ixz="2.8309E-20"
+        ixy="5.7968E-22"
+        ixz="2.5883E-20"
         iyy="0.0001803"
-        iyz="9.0387E-19"
+        iyz="9.0667E-19"
         izz="9.3714E-05" />
     </inertial>
     <visual>
@@ -88,7 +88,7 @@
     name="wheel_left_link"
     type="continuous">
     <origin
-      xyz="0 0 0"
+      xyz="0.0014732 0.17376 0.051477"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -101,16 +101,16 @@
     name="wheel_right_link">
     <inertial>
       <origin
-        xyz="-0.0014732 -0.16692 0.051477"
+        xyz="3.4694E-18 0.006843 3.4694E-17"
         rpy="0 0 0" />
       <mass
         value="0.1194" />
       <inertia
         ixx="9.3714E-05"
-        ixy="-4.7723E-22"
-        ixz="-2.4569E-20"
+        ixy="-3.0247E-23"
+        ixz="-1.7186E-20"
         iyy="0.0001803"
-        iyz="3.0153E-19"
+        iyz="3.0191E-19"
         izz="9.3714E-05" />
     </inertial>
     <visual>
@@ -141,7 +141,7 @@
     name="wheel_right_joint"
     type="continuous">
     <origin
-      xyz="0 0 0"
+      xyz="-0.0014732 -0.17376 0.051477"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -154,7 +154,7 @@
     name="blade_right_link">
     <inertial>
       <origin
-        xyz="0.3015 -0.1503 0.13348"
+        xyz="0 2.7756E-17 1.3878E-17"
         rpy="0 0 0" />
       <mass
         value="0.012885" />
@@ -194,7 +194,7 @@
     name="blade_right_joint"
     type="continuous">
     <origin
-      xyz="0 0 0"
+      xyz="0.3015 -0.1503 0.13348"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -207,7 +207,7 @@
     name="blade_left_link">
     <inertial>
       <origin
-        xyz="0.3015 0.1503 0.13348"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <mass
         value="0.012885" />
@@ -247,7 +247,7 @@
     name="blade_left_joint"
     type="continuous">
     <origin
-      xyz="0 0 0"
+      xyz="0.3015 0.1503 0.13348"
       rpy="0 0 0" />
     <parent
       link="base_link" />
