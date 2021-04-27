@@ -48,7 +48,7 @@
     name="wheel_front_left_link">
     <inertial>
       <origin
-        xyz="0.066 0.16628 0.06"
+        xyz="0 0.00077954 -6.9389E-18"
         rpy="0 0 0" />
       <mass
         value="0.21891" />
@@ -88,7 +88,7 @@
     name="wheel_front_left_joint"
     type="continuous">
     <origin
-      xyz="0 0 0"
+      xyz="0.066 0.1655 0.06"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -101,7 +101,7 @@
     name="wheel_front_right_link">
     <inertial>
       <origin
-        xyz="0.066 -0.16628 0.06"
+        xyz="2.7756E-17 -0.00077954 -6.9389E-18"
         rpy="0 0 0" />
       <mass
         value="0.21891" />
@@ -141,7 +141,7 @@
     name="wheel_front_right_joint"
     type="continuous">
     <origin
-      xyz="0 0 0"
+      xyz="0.066 -0.1655 0.06"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -154,7 +154,7 @@
     name="wheel_back_left_link">
     <inertial>
       <origin
-        xyz="-0.066 0.16628 0.06"
+        xyz="-4.1633E-17 0.33178 -6.9389E-18"
         rpy="0 0 0" />
       <mass
         value="0.21891" />
@@ -194,7 +194,7 @@
     name="wheel_back_left_joint"
     type="continuous">
     <origin
-      xyz="0 0 0"
+      xyz="-0.066 -0.1655 0.06"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -207,7 +207,7 @@
     name="wheel_back_right_link">
     <inertial>
       <origin
-        xyz="-0.066 -0.16628 0.06"
+        xyz="5.5511E-17 -0.33178 -6.9389E-18"
         rpy="0 0 0" />
       <mass
         value="0.21891" />
@@ -247,7 +247,7 @@
     name="wheel_back_right_joint"
     type="continuous">
     <origin
-      xyz="0 0 0"
+      xyz="-0.066 0.1655 0.06"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -260,7 +260,7 @@
     name="weapon_link">
     <inertial>
       <origin
-        xyz="0.23095 4.5022E-17 0.05094"
+        xyz="0.047946 3.9763E-17 -0.0065602"
         rpy="0 0 0" />
       <mass
         value="0.78518" />
@@ -300,7 +300,7 @@
     name="weapon_joint"
     type="fixed">
     <origin
-      xyz="0 0 0"
+      xyz="0.183 0 0.0575"
       rpy="0 0 0" />
     <parent
       link="base_link" />
